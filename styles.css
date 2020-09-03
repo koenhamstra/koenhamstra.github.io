@@ -1,0 +1,144 @@
+
+.container{
+	max-width: 900px;
+	margin: 0 auto;
+	background: white;
+	font-size: 20px;
+	padding: 0px;
+}
+
+.parallax{
+	background: url(pics/new-york-5173657_1920.jpg) no-repeat center;
+	background-size: 100%;
+	background-attachment: fixed;
+	height: 600px;
+
+}
+
+.next-parallax{
+	background: url(pics/norway-4970081_1920.jpg) no-repeat center;
+	background-size: 100%;
+	background-attachment: fixed;
+	height: 600px;
+	
+}
+
+.other-parallax{
+	background: url(pics/buildings-1336611_1920.jpg) no-repeat center;
+	background-size: 100%;
+	background-attachment: fixed;
+	height: 600px;
+	
+}
+
+.last-one{
+	background: url(pics/beach-5377244_1920.jpg) no-repeat center;
+	background-size: 100%;
+	background-attachment: fixed;
+	height: 600px;
+	
+}
+
+.first{
+	color: black;
+	font-family: fantasy;
+}
+
+
+.heading{
+	background-color: black;
+	font-family: fantasy;
+	grid-auto-columns: auto;
+
+}
+.general{
+	background-color: white;
+}
+
+.faq-head{
+		color: black;
+		font-family: fantasy;
+		text-align: center;
+}
+
+.row{
+	color: black;
+	font-family: fantasy;
+	text-align: center;
+	font-size: 20px;
+
+}
+
+
+.study-guide{
+	position: center;
+	font-family: fantasy;
+	text-align: center;
+	font-size: 150%;
+}
+
+.study-links{
+	font-size: 100%;
+	margin: 20px;
+	padding: 100px;
+}
+h3{
+	text-decoration: underline;
+}
+
+ 
+/* Down bellow is the CSS for the dropdown menu */
+
+.dropbtn {
+	background-color: white;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	font-family: fantasy;
+	font-size: 100%;
+	border: 2px solid black;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	transition: 0.5s;
+  }
+  
+  .dropdown {
+	position: fixed;
+	top: 16px;
+	left: 16px;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	font-family: fantasy;
+	font-size: 140%;
+  }
+  
+  .dropdown-content a:hover {background-color: black;
+							color: white;
+							transition: 0.5s;
+}
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+	background-color: black;
+	color: white;
+  }
