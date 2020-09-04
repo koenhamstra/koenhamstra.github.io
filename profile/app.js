@@ -1,6 +1,6 @@
 var pics = [
 	"imgs/me.jpg",
-	"imgs/ed563973793e27a798e06a85056ee708.jpg",
+	"imgs/view.jpg",
 	"imgs/interstellar.jpg",
 ]
 
@@ -11,7 +11,7 @@ let texts = [
 ]
 
 var btn = document.getElementById("tap");
-var img = document.querySelector ("img");
+var img = document.querySelector("img");
 let p = document.getElementById("paragraph");
 
 var counter = 1;

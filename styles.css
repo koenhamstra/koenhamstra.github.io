@@ -85,7 +85,12 @@
 h3{
 	text-decoration: underline;
 }
-
+a:link {
+	color: black;
+}
+a:visited{
+	color: black;
+}
  
 /* Down bellow is the CSS for the dropdown menu */
 
@@ -102,6 +107,7 @@ h3{
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	transition: 0.5s;
+
   }
   
   .dropdown {
@@ -109,14 +115,19 @@ h3{
 	top: 16px;
 	left: 16px;
 	display: inline-block;
+	transform-origin: top center
+    
   }
-  
+
   .dropdown-content {
-	display: none;
+	opacity: 0;
+	user-select: none;
+	display: inline-flex;
 	position: absolute;
 	background-color: white;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	transition: width 0.5s linear;
 	z-index: 1;
   }
   
@@ -129,16 +140,90 @@ h3{
 	font-size: 140%;
   }
   
-  .dropdown-content a:hover {background-color: black;
+  .dropdown-content a:hover {
+	  background-color: black;
 							color: white;
 							transition: 0.5s;
 }
   
   .dropdown:hover .dropdown-content {
-	display: block;
-  }
+	opacity: 1;
+	user-select: none;
+}
   
   .dropdown:hover .dropbtn {
 	background-color: black;
 	color: white;
+  }
+
+
+
+  /* down bellow is voor the gridcontainer on dashboard*/
+
+
+  .grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 40px;
+	background-color: white;
+	padding: 0px;
+	box-shadow: 0px 0px 0px 0px;
+  }
+
+  .grid-1 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	background-color: white;
+	color: grey;
+	padding: 0px;
+	box-shadow: 0px 8px 16px 0px;
+	cursor: pointer;
+  }
+  .grid-2 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	color: grey;
+	padding: 0px;
+	box-shadow: 0px 8px 16px 0px;
+  }
+  .grid-3 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	color: grey;
+	padding: 0px;
+	box-shadow: 0px 8px 16px 0px;
+  }
+  .grid-4 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	color: grey;
+	padding: 0px;
+	box-shadow: 0px 8px 16px 0px;
+  }
+  .grid-5 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	color: grey;
+	padding: 0px;
+	box-shadow: 0px 8px 16px 0px;
+  }
+  .grid-6 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	color: grey;
+	padding: 0px;
+	box-shadow: 0px 8px 16px 0px;
+  }
+  
+  .grid-container > div {
+	background-color: lightgray;
+	border: 0px solid black;
+	text-align: center;
+	font-size: 20px;
   }
