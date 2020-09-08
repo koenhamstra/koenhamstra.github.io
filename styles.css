@@ -95,6 +95,7 @@ a:visited{
 /* Down bellow is the CSS for the dropdown menu */
 
 .dropbtn {
+	z-index: 0;
 	background-color: white;
 	color: black;
 	padding: 16px;
@@ -133,7 +134,7 @@ a:visited{
   
   .dropdown-content a {
 	color: black;
-	padding: 12px 16px;
+	padding: 13px 16px;
 	text-decoration: none;
 	display: block;
 	font-family: fantasy;
@@ -161,29 +162,39 @@ a:visited{
   /* down bellow is voor the gridcontainer on dashboard*/
 
 
-  .grid-container {
+  .grid-container1 {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	grid-gap: 40px;
 	background-color: white;
 	padding: 0px;
 	box-shadow: 0px 0px 0px 0px;
+	
+  }
+  .grid-container1 a:hover {
+	background-color: black;
+	color: white;
+	transition: 1s;
+}
+
+  .grid-1:hover, .grid-2:hover, .grid-3:hover, .grid-4:hover, .grid-5:hover, .grid-6:hover {
+		background-color: black;
+		color: white;
   }
 
   .grid-1 {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-gap: 20px;
+	grid-gap: 0px;
 	background-color: white;
 	color: grey;
 	padding: 0px;
 	box-shadow: 0px 8px 16px 0px;
-	cursor: pointer;
   }
   .grid-2 {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-gap: 20px;
+	grid-gap: 0px;
 	color: grey;
 	padding: 0px;
 	box-shadow: 0px 8px 16px 0px;
@@ -191,15 +202,16 @@ a:visited{
   .grid-3 {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-gap: 20px;
+	grid-gap: 0px;
 	color: grey;
 	padding: 0px;
 	box-shadow: 0px 8px 16px 0px;
+	
   }
   .grid-4 {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-gap: 20px;
+	grid-gap: 0px;
 	color: grey;
 	padding: 0px;
 	box-shadow: 0px 8px 16px 0px;
@@ -207,23 +219,46 @@ a:visited{
   .grid-5 {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-gap: 20px;
-	color: grey;
-	padding: 0px;
-	box-shadow: 0px 8px 16px 0px;
-  }
-  .grid-6 {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-gap: 20px;
+	grid-gap: 0px;
 	color: grey;
 	padding: 0px;
 	box-shadow: 0px 8px 16px 0px;
   }
   
-  .grid-container > div {
+  .grid-6 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 0px;
+	color: grey;
+	padding: 0px;
+	box-shadow: 0px 8px 16px 0px;
+  }
+  
+  .grid-container1 > div {
 	background-color: lightgray;
 	border: 0px solid black;
 	text-align: center;
 	font-size: 20px;
+	grid-gap: 0px;
   }
+
+  .grid-container2 {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-gap: 2px;
+	background-color: white;
+	padding: 10px;
+  }
+  
+  .grid-container2 > div {
+	background-color: Lightgray;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 20px;
+  }
+
+  #curve_chart{
+		width: 1400px;
+		height: 700px;
+  }
+

@@ -19,8 +19,8 @@
 <body>
     <div class="study-guide">
         <h1>Study Guide</h1>
-
-        <div class="grid-container">
+    
+        <div class="grid-container1">
             <div class= "grid-1"><a href="https://hz.nl/uploads/documents/Regelingen/EN/OER-HZ-2019-2020werkdocv2018-05-17DEF_ENGELS-AC-29112019.pdf"> Click this link for the HZ Course and Examination Regulations.</a></div>
             <div class= "grid-2"><a href="https://learn.hz.nl"> Click this link for the HZ learning environment. </a></div>
             <div class= "grid-3"><a href="https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf">Click this link for the Implementation Regulation from the HZ.</a></div>  
@@ -28,18 +28,75 @@
             <div class= "grid-5"><a href="https://learn.hz.nl/course/view.php?id=17530#section-2"> Click this link for my study progress.</a></div>
             <div class= "grid-6"><a href="https://github.com"> Click this link for the github environment.</a></div>
         </div>
-        
-        <!--
-        <div class="study-links">
-                <a href="https://hz.nl/uploads/documents/Regelingen/EN/OER-HZ-2019-2020werkdocv2018-05-17DEF_ENGELS-AC-29112019.pdf"> Click this link for the HZ Course and Examination Regulations.</a><br>
-                <a href="https://learn.hz.nl"> Click this link for the HZ learning environment. </a><br>
-                <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf">Click this link for the Implementation Regulation from the HZ.</a><br>
-                <a href="https://learn.hz.nl/course/view.php?id=17530#section-0"> Click this link for the Teams environment of my studyprogram.</a><br>
-                <a href="https://learn.hz.nl/course/view.php?id=17530#section-2"> Click this link for my study progress.</a><br>
-                <a href="https://github.com"> Click this link for the github environment.</a><br>
-            </div>
-        -->
+
+        <h1>Study Monitor</h1>
+
+        <div class="grid-container2">
+            <div class= "grid-7">Quartile</div>
+            <div class= "grid-8">Course</div>
+            <div class= "grid-9">EC</div>  
+            <div class= "grid-10">Exam</div>
+            <div class= "grid-11">Grade</div>
+            <div class= "grid-12">1</div>
+            <div class= "grid-13">Programme and Career Orientation<br>Computerscience Basic<br> Programming Basics<br></div>
+            <div class= "grid-14">2,5 EC<br>7,5 EC<br>5 EC</div>
+            <div class= "grid-15">Assessment exam<br>Written exam<br>Case study exam</div>
+            <div class= "grid-16"></div>
+            <div class= "grid-17">2</div>
+            <div class= "grid-18">Object Oriented Programming<br>Professional Skills 1</div>
+            <div class= "grid-19">10 EC<br>2,5 EC</div>
+            <div class= "grid-20">Case study / project<br>Portfolio exam</div>
+            <div class= "grid-21"></div>
+            <div class= "grid-22">3</div>
+            <div class= "grid-23">Framework Project 1<br> Professional Working Environment<br>Framework Development 1<br>Professional Skills 2</div>
+            <div class= "grid-24">5 EC<br>2,5 EC<br>5 EC<br>2,5 EC</div>
+            <div class= "grid-25">2 Portfolio exams<br>Assessment<br>Case study<br>Portfolio exam + 2 written exams</div>
+            <div class= "grid-26"></div>
+            <div class= "grid-27">4</div>
+            <div class= "grid-28">Framework Project 2<br>Professional Skills 3<br>Framework Development 2</div>
+            <div class= "grid-29">5 EC<br>2,5 EC<br>5 EC</div>
+            <div class= "grid-30">Portfolio exam<br>Portfolio exam + 2 written exams<br>Portfolio exam</div>
+            <div class= "grid-31"></div>
+        </div>
+
+    <div id="curve_chart" position="static" z-index="0">
+
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+         var data = google.visualization.arrayToDataTable([
+          ['Month', 'Study Points', 'Required', 'Goal'],
+          ['1',  0,      45, 60],
+          ['2',  0,      45, 60],
+          ['3',  0,      45, 60],
+          ['4',  0,      45, 60],
+          ['5',  0,      45, 60],
+          ['6',  0,      45, 60],
+          ['7',  0,      45, 60],
+          ['8',  0,      45, 60],
+          ['9',  0,      45, 60],
+          ['10',  0,      45, 60],
+          ['11',  0,      45, 60],
+          ['12',  0,      45, 60],
+        ]);
+
+        var options = {
+          title: 'Study Points',
+          curveType: 'function',
+          legend: { position: 'bottom'}
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+        </script>        
+    
     </div>
+
 </body>
 
 </html>
