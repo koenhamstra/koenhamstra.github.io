@@ -7,6 +7,62 @@
 	padding: 0px;
 }
 
+/* down bellow is the styling for the profession page */
+.motivation{
+	height: 400px;
+}
+.resource-list{
+	text-align: center;
+	font-family: fantasy;
+}
+.firstgoogle{
+	font-family: fantasy;
+}
+.google{
+	font-family: fantasy;
+}
+
+.vera{
+	font-family: fantasy;
+}
+
+.asml{
+	background: url(pics/asml.jpg) no-repeat center;
+	background-size: 80%;
+	background-attachment: fixed;
+	height: 600px;
+}
+
+.veracode{
+	background: url(pics/veracode.jpg) no-repeat center;
+	background-size: 100%;
+	background-attachment: fixed;
+	height: 600px;
+}
+
+.microsoft{
+	background: url(pics/microsoft.png) no-repeat center;
+	background-size: 70%;
+	background-attachment: fixed;
+	height: 600px;
+}
+
+.googleimg{
+	background: url(pics/google.png) no-repeat center;
+	background-size: 60%;
+	background-attachment: fixed;
+	height: 600px;
+}
+
+.macawimg{
+	background: url(pics/macaw.jpg) no-repeat center;
+	background-size: 100%;
+	background-attachment: fixed;
+	height: 600px;
+}
+
+/* above here is the styling for the profession page */
+
 .parallax{
 	background: url(pics/new-york-5173657_1920.jpg) no-repeat center;
 	background-size: 100%;
@@ -39,11 +95,51 @@
 	
 }
 
+.profession-heading{
+	font-family: fantasy;
+	text-align: center;
+}
+
+.table-first{
+	color: black;
+	font-family: fantasy;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+
+/* down bellow is the css for the motivation page */
+
 .first{
+	color: black;
+	font-family: fantasy;
+	text-align: center;
+}
+
+.second{
 	color: black;
 	font-family: fantasy;
 }
 
+.third{
+	color: black;
+	font-family: fantasy;
+}
+
+.fourth{
+	color: black;
+	font-family: fantasy;
+}
+
+.dan{
+	color: black;
+	font-family: fantasy;
+	text-align: center;
+}
+
+/* above is the css for the motivation page*/
 
 .heading{
 	background-color: black;
@@ -69,6 +165,33 @@
 
 }
 
+.motivation1{
+	background: url(pics/johnson-wang-iI4sR_nkkbc-unsplash.jpg) no-repeat center;
+	background-size: 70%;
+	background-attachment: fixed;
+	height: 600px;
+}
+
+.motivation2{
+	background: url(pics/clark-tibbs-oqStl2L5oxI-unsplash.jpg) no-repeat center;
+	background-size: 70%;
+	background-attachment: fixed;
+	height: 600px;
+}
+
+.motivation3{
+	background: url(pics/nick-fewings-HU-xiyQ-4Oo-unsplash.jpg) no-repeat center;
+	background-size: 70%;
+	background-attachment: fixed;
+	height: 600px;
+}
+
+.motivation4{
+	background: url(pics/prateek-katyal-6jYnKXVxOjc-unsplash.jpg) no-repeat center;
+	background-size: 80%;
+	background-attachment: fixed;
+	height: 600px;
+}
 
 .study-guide{
 	position: center;
@@ -108,7 +231,6 @@ a:visited{
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	transition: 0.5s;
-
   }
   
   .dropdown {
@@ -117,7 +239,6 @@ a:visited{
 	left: 16px;
 	display: inline-block;
 	transform-origin: top center
-    
   }
 
   .dropdown-content {
@@ -143,8 +264,8 @@ a:visited{
   
   .dropdown-content a:hover {
 	  background-color: black;
-							color: white;
-							transition: 0.5s;
+	  color: white;
+	  transition: 0.5s;						
 }
   
   .dropdown:hover .dropdown-content {
@@ -155,7 +276,11 @@ a:visited{
   .dropdown:hover .dropbtn {
 	background-color: black;
 	color: white;
+	
   }
+
+ 
+  
 
 
 
